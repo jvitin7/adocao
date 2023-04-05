@@ -22,5 +22,8 @@
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "typescript": "*"
+  },
+  "scripts": {
+    "start-dev": "nodemon -e ts,json,mustache src/server.ts"
   }
 }

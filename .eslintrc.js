@@ -12,6 +12,6 @@ module.exports = {
     ecmaVersion: 'latest'
   },
   rules: {
-    quotes: 'single'
+    quotes: ['error', 'single']
   }
 }
