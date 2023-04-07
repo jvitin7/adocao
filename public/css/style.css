@@ -45,6 +45,8 @@ header input::placeholder {
   justify-content: center;
   height: 256px;
   margin-bottom: 48px;
+  background-size: cover;
+  background-position: center;
 }
 .banner h2 {
   background-color: #ffffff;
