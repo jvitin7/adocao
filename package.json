@@ -24,6 +24,7 @@
     "typescript": "*"
   },
   "scripts": {
-    "start-dev": "nodemon -e ts,json,mustache src/server.ts"
+    "start-dev": "nodemon -e ts,json,mustache src/server.ts",
+    "sass-build": "sass --watch public/sass/style.scss:public/css/style.css"
   }
 }

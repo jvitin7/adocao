@@ -63,8 +63,9 @@ header {
 
 nav {
   ul {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 78px;
 
     li {
       list-style-type: none;
@@ -75,7 +76,7 @@ nav {
         align-items: center;
 
         height: 56px;
-        width: 328px;
+        width: 100%;
         background-color: $white-shadow;
         border-radius: 24px;
 
@@ -85,4 +86,38 @@ nav {
       }
     }
   }
+}
+
+main.list {
+  margin-top: 48px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 78px;
+
+  .item {
+    height: 176px;
+    background-color: $yellow;
+    border-radius: 24px;
+    color: $white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 16px;
+
+    background-image: url("../images/border-collie.png");
+    background-position: revert;
+    background-size: cover;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 60px;
+  background-color: $primary-color;
+  color: $white;
+  font-size: 14px;
+  margin-top: 48px;
 }
