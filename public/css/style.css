@@ -44,7 +44,6 @@ header input::placeholder {
   align-items: center;
   justify-content: center;
   height: 256px;
-  background-image: url("../images/banner-all.png");
   margin-bottom: 48px;
 }
 .banner h2 {

@@ -17,9 +17,11 @@
       </form>
     </header>
 
-    <section class="banner">
+    {{ #banner }}
+    <section class="banner" style="background-image: url('images/{{ banner.background }}')">
       <h2>{{ banner.title }}</h2>
     </section>
+    {{ /banner }}
 
     <nav class="container">
       <ul>
