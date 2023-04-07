@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AdoCão</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" type="image/png" href="/images/favicon.svg" />
+    <link rel="icon" type="image/png" href="/images/branding/paw.png" />
   </head>
   <body>
     <header class="container">
@@ -13,24 +13,24 @@
         <img src="images/branding/logo_primary.svg" />
       </a>
       <form method="GET" action="/search">
-        <input type="search" name="search" placeholder="Pesquise por raça" />
+        <input type="search" name="search" placeholder="Search by race" />
       </form>
     </header>
 
     <section class="banner">
-      <h2>Todos</h2>
+      <h2>All</h2>
     </section>
 
     <nav class="container">
       <ul>
         <li>
-          <a href="/" class="active">Todos</a>
+          <a href="/" class="active">All</a>
         </li>
         <li class="{{ #menu.dog }}active{{ /menu.dog }}">
-          <a href="/dogs">Macho</a>
+          <a href="/dogs">Male</a>
         </li>
         <li class="{{ #menu.cat }}active{{ /menu.cat }}">
-          <a href="/cats">Femêa</a>
+          <a href="/cats">Female</a>
         </li>
       </ul>
     </nav>
