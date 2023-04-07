@@ -18,21 +18,19 @@
     </header>
 
     <section class="banner">
-      <h2>Todos</h2>
+      <h2>{{ banner.title }}</h2>
     </section>
 
     <nav class="container">
       <ul>
         <li>
-          <a href="/" class="active">Todos</a>
+          <a href="/" class="{{ #menu.all }}active{{ /menu.all }}">Todos</a>
         </li>
-        <li class="{{ #menu.dog }}active{{ /menu.dog }}">
-          <a href="/dogs">Macho</a>
+        <li>
+          <a href="/male" class="{{ #menu.male }}active{{ /menu.male }}">Macho</a>
         </li>
-        <li class="{{ #menu.cat }}active{{ /menu.cat }}">
-          <a href="/cats">Femêa</a>
+        <li>
+          <a href="/female" class="{{ #menu.female }}active{{ /menu.female }}">Femêa</a>
         </li>
       </ul>
     </nav>
-  </body>
-</html>

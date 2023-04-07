@@ -5,38 +5,28 @@ export const home = (request: Request, response: Response) => {
   response.render("pages/page", {
     menu: createMenuObject("all"),
     banner: {
-      title: "Todos os animais",
-      background: "allanimals.jpg",
+      title: "Todos",
+      background: "banner-all.png",
     },
   });
 };
 
-export const dogs = (request: Request, response: Response) => {
+export const male = (request: Request, response: Response) => {
   response.render("pages/page", {
-    menu: createMenuObject("dog"),
+    menu: createMenuObject("male"),
     banner: {
-      title: "Cachorros",
-      background: "banner_dog.jpg",
+      title: "Macho",
+      background: "banner-male.png",
     },
   });
 };
 
-export const cats = (request: Request, response: Response) => {
+export const female = (request: Request, response: Response) => {
   response.render("pages/page", {
-    menu: createMenuObject("cat"),
+    menu: createMenuObject("female"),
     banner: {
-      title: "Gatos",
-      background: "banner_cat.jpg",
-    },
-  });
-};
-
-export const fishes = (request: Request, response: Response) => {
-  response.render("pages/page", {
-    menu: createMenuObject("fish"),
-    banner: {
-      title: "Peixes",
-      background: "banner_fish.jpg",
+      title: "Fêmea",
+      background: "banner-female.png",
     },
   });
 };

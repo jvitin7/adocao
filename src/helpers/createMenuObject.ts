@@ -1,11 +1,10 @@
-type MenuOptions = "" | "all" | "dog" | "cat" | "fish";
+type MenuOptions = "" | "all" | "male" | "female";
 
 export const createMenuObject = (activeMenu: MenuOptions) => {
   let returnObject = {
     all: false,
-    dog: false,
-    cat: false,
-    fish: false,
+    male: false,
+    female: false,
   };
 
   if (activeMenu !== "") {
