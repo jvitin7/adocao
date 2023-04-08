@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,12 +13,20 @@
         <img src="images/branding/logo_primary.svg" />
       </a>
       <form method="GET" action="/search">
-        <input type="search" name="search" placeholder="Pesquise por raça" value="{{ #query }}{{ query }}{{/query}}"/>
+        <input
+          type="search"
+          name="search"
+          placeholder="Pesquise por raça"
+          value="{{ #query }}{{ query }}{{ /query }}"
+        />
       </form>
     </header>
 
     {{ #banner }}
-    <section class="banner" style="background-image: url('images/{{ banner.background }}')">
+    <section
+      class="banner"
+      style="background-image: url('images/{{ banner.background }}')"
+    >
       <h2>{{ banner.title }}</h2>
     </section>
     {{ /banner }}
@@ -29,10 +37,14 @@
           <a href="/" class="{{ #menu.all }}active{{ /menu.all }}">Todos</a>
         </li>
         <li>
-          <a href="/male" class="{{ #menu.male }}active{{ /menu.male }}">Macho</a>
+          <a href="/male" class="{{ #menu.male }}active{{ /menu.male }}">
+            Macho
+          </a>
         </li>
         <li>
-          <a href="/female" class="{{ #menu.female }}active{{ /menu.female }}">Femêa</a>
+          <a href="/female" class="{{ #menu.female }}active{{ /menu.female }}">
+            Femêa
+          </a>
         </li>
       </ul>
     </nav>
