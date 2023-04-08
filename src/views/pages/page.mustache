@@ -1,9 +1,13 @@
 {{ >partials/header }}
 
 <main class="container list">
-  <div class="item">
-    <div class="item--name">Border Collie</div>
+  {{ #list }}
+  <div class="item" style="background-image: url('images/{{ image }}')">
+    <div class="item--name">{{ name }}</div>
+    <div class="item--gender">{{ gender }}</div>
+    <div class="item--color">{{ color }}</div>
   </div>
+  {{ /list }}
 </main>
 
 {{>partials/footer }}

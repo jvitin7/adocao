@@ -101,13 +101,18 @@ main.list {
     background-color: $yellow;
     border-radius: 24px;
     color: $white;
-    font-size: 18px;
-    font-weight: bold;
     padding: 16px;
-
-    background-image: url("../images/border-collie.png");
     background-position: revert;
     background-size: cover;
+
+    .item--name {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .item--color,
+    .item--gender {
+      font-size: 14px;
+    }
   }
 }
 

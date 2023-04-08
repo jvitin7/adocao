@@ -1,4 +1,4 @@
-type DogGender = "Male" | "Female";
+type DogGender = "Macho" | "Fêmea";
 
 type Dog = {
   gender: DogGender;
@@ -9,43 +9,49 @@ type Dog = {
 
 const data: Dog[] = [
   {
-    gender: "Male",
+    gender: "Fêmea",
+    image: "border-collie.png",
+    name: "Border Collie",
+    color: "Preto",
+  },
+  {
+    gender: "Macho",
     image: "",
     name: "Pastor-alemão",
     color: "Amarelo e Preto",
   },
   {
-    gender: "Male",
+    gender: "Macho",
     image: "",
     name: "Labrador-retriever",
     color: "Branco",
   },
   {
-    gender: "Female",
+    gender: "Fêmea",
     image: "",
     name: "Zwergspitz",
     color: "Amarelo",
   },
   {
-    gender: "Male",
+    gender: "Macho",
     image: "",
     name: "Husky Siberiano",
     color: "Branco e Preto",
   },
   {
-    gender: "Male",
+    gender: "Macho",
     image: "",
     name: "Golden Retriever",
     color: "Amarelo",
   },
   {
-    gender: "Female",
+    gender: "Fêmea",
     image: "",
     name: "Poodle",
     color: "Branco",
   },
   {
-    gender: "Male",
+    gender: "Macho",
     image: "",
     name: "Bulldog",
     color: "Branco e Amarelo",
@@ -59,7 +65,7 @@ export const Dog = {
   },
 
   // Filter dogs by gender
-  getFromType: (type: DogGender): Dog[] => {
+  getFromGender: (type: DogGender): Dog[] => {
     return data.filter((item) => item.gender === type);
   },
 
