@@ -1,6 +1,38 @@
 @import "./variables.scss";
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $font;
+}
+
+.container {
+  width: 1140px;
+  margin: auto;
+}
+
 .active {
   background-color: $primary-color;
   color: $white;
+}
+
+h2 {
+  color: $primary-color;
+  font-size: $font-size-large;
+  border-radius: $spacing-large;
+}
+
+input {
+  border: 2px solid $primary-color;
+  border-radius: $spacing-medium;
+  color: $primary-color;
+  font-size: $font-size-medium;
+  height: calc($height - $spacing-small);
+  padding: 0 $spacing-medium;
+  outline: none;
+
+  &::placeholder {
+    color: $primary-color;
+  }
 }

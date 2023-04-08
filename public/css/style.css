@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;0,700;1,400&display=swap");
-.active {
-  background-color: #fc7e55;
-  color: #ffffff;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -17,16 +12,18 @@
   margin: auto;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100px;
+.active {
+  background-color: #fc7e55;
+  color: #ffffff;
 }
-header img {
-  height: 40px;
+
+h2 {
+  color: #fc7e55;
+  font-size: 28px;
+  border-radius: 32px;
 }
-header input {
+
+input {
   border: 2px solid #fc7e55;
   border-radius: 16px;
   color: #fc7e55;
@@ -35,59 +32,67 @@ header input {
   padding: 0 16px;
   outline: none;
 }
-header input::placeholder {
+input::placeholder {
   color: #fc7e55;
 }
 
-.banner {
+.banner,
+.banner h2,
+nav ul li a,
+.no-product-list,
+footer {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+header img {
+  height: 40px;
+}
+
+.banner {
   height: 256px;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
   background-size: cover;
   background-position: center;
 }
 .banner h2 {
   background-color: #ffffff;
-  color: #fc7e55;
-  font-size: 32px;
-  border-radius: 32px;
-  height: 64px;
+  height: 56px;
   width: 328px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 nav ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 78px;
+  margin: 32px 0;
 }
 nav ul li {
   list-style-type: none;
 }
 nav ul li a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 56px;
+  height: 48px;
   width: 100%;
   background-color: #bfbfbf;
   border-radius: 24px;
   color: #474747;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 20px;
 }
 
-main.list {
-  margin-top: 48px;
+main.product-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 78px;
+  gap: 32px 78px;
 }
-main.list .item {
+main.product-list .item {
   height: 176px;
   border-radius: 24px;
   color: #ffffff;
@@ -95,12 +100,12 @@ main.list .item {
   background-position: revert;
   background-size: cover;
 }
-main.list .item .item--name {
-  font-size: 18px;
+main.product-list .item .item--name {
+  font-size: 16px;
   font-weight: bold;
 }
-main.list .item .item--color,
-main.list .item .item--gender {
+main.product-list .item .item--color,
+main.product-list .item .item--gender {
   font-size: 14px;
 }
 
@@ -122,30 +127,26 @@ main.list .item .item--gender {
   background-color: #fc7e55;
 }
 
-.no-list {
-  display: flex;
-  justify-content: center;
+.no-product-list {
+  height: calc(100vh - 256px);
   color: #fc7e55;
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60px;
+  height: 48px;
   background-color: #fc7e55;
   color: #ffffff;
   font-size: 14px;
-  margin-top: 48px;
+  margin-top: 32px;
 }
 
 @media (max-width: 900px) {
-  .list {
+  .product-list {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 @media (max-width: 768px) {
-  .list {
+  .product-list {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -157,7 +158,7 @@ footer {
   h2 {
     font-size: 18px;
   }
-  .list {
+  .product-list {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -171,7 +172,7 @@ footer {
   ul li a {
     padding: 5px 10px;
   }
-  .list {
+  .product-list {
     grid-template-columns: 1fr;
   }
 }

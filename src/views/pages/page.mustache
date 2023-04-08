@@ -1,6 +1,6 @@
 {{ >partials/header }}
 
-<main class="container list">
+<main class="container product-list">
   {{ #list }}
   <div class="item" style="background-image: url('images/{{ image }}')">
     <div class="item--name">{{ name }}</div>
@@ -11,7 +11,7 @@
 </main>
 
 {{ ^list }}
-<div class="container no-list">
+<div class="container no-product-list">
   <h2>Não há animais disponíveis nestas condições</h2>
 </div>
 {{ /list }}

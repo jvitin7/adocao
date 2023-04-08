@@ -1,11 +1,30 @@
 // Font
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;0,700;1,400&display=swap");
 $font: "Ubuntu", sans-serif;
+$font-size-small: 14px;
+$font-size-medium: 16px;
+$font-size-large: 28px;
+
+// Spacing
+$spacing-small: 8px;
+$spacing-medium: 16px;
+$spacing-large: 32px;
 
 // Colors
 $primary-color: #fc7e55;
-$secunday-color: #474747;
+$secundary-color: #474747;
 $white: #ffffff;
 $white-shadow: #bfbfbf;
 $yellow: #fcc65a;
 $coral-red: #ff472a;
+
+// Heights
+$height: 48px;
+$height-spaced: 32px;
+
+// Mixins
+@mixin flex($display, $justify-content, $align-items) {
+  display: $display;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
