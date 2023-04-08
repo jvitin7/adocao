@@ -56,6 +56,54 @@ const data: Dog[] = [
     name: "Bulldog",
     color: "Branco e Amarelo",
   },
+  {
+    gender: "Fêmea",
+    image: "border-collie.png",
+    name: "Border Collie",
+    color: "Preto",
+  },
+  {
+    gender: "Macho",
+    image: "",
+    name: "Pastor-alemão",
+    color: "Amarelo e Preto",
+  },
+  {
+    gender: "Macho",
+    image: "",
+    name: "Labrador-retriever",
+    color: "Branco",
+  },
+  {
+    gender: "Fêmea",
+    image: "",
+    name: "Zwergspitz",
+    color: "Amarelo",
+  },
+  {
+    gender: "Macho",
+    image: "",
+    name: "Husky Siberiano",
+    color: "Branco e Preto",
+  },
+  {
+    gender: "Macho",
+    image: "",
+    name: "Golden Retriever",
+    color: "Amarelo",
+  },
+  {
+    gender: "Fêmea",
+    image: "",
+    name: "Poodle",
+    color: "Branco",
+  },
+  {
+    gender: "Macho",
+    image: "",
+    name: "Bulldog",
+    color: "Branco e Amarelo",
+  },
 ];
 
 export const Dog = {

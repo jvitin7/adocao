@@ -13,7 +13,7 @@
         <img src="images/branding/logo_primary.svg" />
       </a>
       <form method="GET" action="/search">
-        <input type="search" name="search" placeholder="Pesquise por raça" />
+        <input type="search" name="search" placeholder="Pesquise por raça" value="{{ #query }}{{ query }}{{/query}}"/>
       </form>
     </header>
 

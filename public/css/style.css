@@ -89,7 +89,6 @@ main.list {
 }
 main.list .item {
   height: 176px;
-  background-color: #fcc65a;
   border-radius: 24px;
   color: #ffffff;
   padding: 16px;
@@ -103,6 +102,30 @@ main.list .item .item--name {
 main.list .item .item--color,
 main.list .item .item--gender {
   font-size: 14px;
+}
+
+.item:nth-child(9n+1),
+.item:nth-child(9n+5),
+.item:nth-child(9n+9) {
+  background-color: #fcc65a;
+}
+
+.item:nth-child(9n+2),
+.item:nth-child(9n+6),
+.item:nth-child(9n+7) {
+  background-color: #ff472a;
+}
+
+.item:nth-child(9n+3),
+.item:nth-child(9n+4),
+.item:nth-child(9n+8) {
+  background-color: #fc7e55;
+}
+
+.no-list {
+  display: flex;
+  justify-content: center;
+  color: #fc7e55;
 }
 
 footer {

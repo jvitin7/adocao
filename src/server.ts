@@ -21,5 +21,5 @@ server.use(express.static(path.join(__dirname, "../public")));
 // Routes
 server.use(mainRoutes);
 server.use((request, response) => {
-  response.send("Cannot get this page");
+  response.render("pages/404");
 });
